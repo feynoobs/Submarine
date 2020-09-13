@@ -4,13 +4,13 @@ define('MIN_OF_SPEC', 170);
 define('MIN_OF_CAPACITY', 90);
 define('MIN_OF_SPEED', 10);
 define('MIN_OF_DISTANCE', 100);
-define('MIN_OF_LUCK', 160);
+define('MIN_OF_LUCK', 150);
 
-define('BONUS_OF_SPEC', 20);
-define('BONUS_OF_CAPACITY', 25);
-define('BONUS_OF_SPEED', 15);
-define('BONUS_OF_DISTANCE', 20);
-define('BONUS_OF_LUCK', 15);
+define('BONUS_OF_SPEC', 30);
+define('BONUS_OF_CAPACITY', 40);
+define('BONUS_OF_SPEED', 20);
+define('BONUS_OF_DISTANCE', 23);
+define('BONUS_OF_LUCK', 20);
 
 $bodys = [
     ['name' => 'シャーク級艦体', 'params' => [-10, 30, 20, 40, 20], 'cost' => 5],
@@ -18,6 +18,13 @@ $bodys = [
     ['name' => 'ホエール級艦体', 'params' => [-15, 55, 35, 15, 20], 'cost' => 12],
     ['name' => 'シーラカンス級艦体', 'params' => [40, -10, 25, 40, 25], 'cost' => 14],
     ['name' => 'シルドラ級艦体', 'params' => [10, 75, 30, -15, 5], 'cost' => 17],
+
+    ['name' => 'シャーク改級艦体', 'params' => [-5, 40, 25, 45, 35], 'cost' => 20],
+    ['name' => 'ウンキウ改級艦体', 'params' => [20, 15, 5, 65, 25], 'cost' => 20],
+    ['name' => 'ホエール改級艦体', 'params' => [-10, 55, 40, 20, 30], 'cost' => 20],
+    ['name' => 'シーラカンス改級艦体', 'params' => [40, -5, 30, 40, 30], 'cost' => 20],
+    ['name' => 'シルドラ改級艦体', 'params' => [10, 80, 30, -15, 10], 'cost' => 20],
+
 ];
 
 $tails = [
@@ -26,6 +33,12 @@ $tails = [
     ['name' => 'ホエール級艦尾', 'params' => [15, 20, 0, 55, 15], 'cost' => 12],
     ['name' => 'シーラカンス級艦尾', 'params' => [10, 25, 35, 25, 25], 'cost' => 14],
     ['name' => 'シルドラ級艦尾', 'params' => [20, 60, 35, -15, 5], 'cost' => 17],
+
+    ['name' => 'シャーク改級艦尾', 'params' => [-25, 25, 70, 35, 25], 'cost' => 20],
+    ['name' => 'ウンキウ改級艦尾', 'params' => [20, 5, 35, 45, 35], 'cost' => 20],
+    ['name' => 'ホエール改級艦尾', 'params' => [20, 20, 5, 60, 20], 'cost' => 20],
+    ['name' => 'シーラカンス改級艦尾', 'params' => [10, 25, 40, 30, 30], 'cost' => 20],
+    ['name' => 'シルドラ改級艦尾', 'params' => [20, 60, 35, -10, 10], 'cost' => 20],
 ];
 
 $heads = [
@@ -34,6 +47,13 @@ $heads = [
     ['name' => 'ホエール級艦首', 'params' => [25, 60, -15, 20, 15], 'cost' => 12],
     ['name' => 'シーラカンス級艦首', 'params' => [65, 10, -10, 30, 0], 'cost' => 14],
     ['name' => 'シルドラ級艦首', 'params' => [45, 30, -15, 40, 40], 'cost' => 17],
+
+    ['name' => 'シャーク改級艦首', 'params' => [55, 50, 15, -15, 25], 'cost' => 20],
+    ['name' => 'ウンキウ改級艦首', 'params' => [65, 25, 25, -10, 20], 'cost' => 20],
+    ['name' => 'ホエール改級艦首', 'params' => [25, 65, -10, 25, 25], 'cost' => 20],
+    ['name' => 'シーラカンス改級艦首', 'params' => [70, 15, -10, 30, 5], 'cost' => 20],
+    ['name' => 'シルドラ改級艦首', 'params' => [45, 30, -10, 40, 40], 'cost' => 20],
+
 ];
 
 $bridges = [
@@ -42,6 +62,12 @@ $bridges = [
     ['name' => 'ホエール級艦橋', 'params' => [0, 25, 20, 45, 40], 'cost' => 12],
     ['name' => 'シーラカンス級艦橋', 'params' => [55, 20, 35, -15, 50], 'cost' => 14],
     ['name' => 'シルドラ級艦橋', 'params' => [55, 20, -5, 30, 60], 'cost' => 17],
+
+    ['name' => 'シャーク改級艦橋', 'params' => [25, 25, 30, 25, 35], 'cost' => 20],
+    ['name' => 'ウンキウ改級艦橋', 'params' => [30, 10, 30, 35, 40], 'cost' => 20],
+    ['name' => 'ホエール改級艦橋', 'params' => [0, 30, 25, 50, 45], 'cost' => 20],
+    ['name' => 'シーラカンス改級艦橋', 'params' => [60, 20, 35, -10, 55], 'cost' => 20],
+    ['name' => 'シルドラ級艦橋', 'params' => [60, 20, -5, 30, 60], 'cost' => 20],
 ];
 
 $result = [];
