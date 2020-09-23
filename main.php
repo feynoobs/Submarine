@@ -12,6 +12,8 @@ define('BONUS_OF_SPEED', 20);
 define('BONUS_OF_DISTANCE', 23);
 define('BONUS_OF_LUCK', 20);
 
+define('USE_KAI', false);
+
 $bodys = [
     ['name' => 'シャーク級艦体', 'params' => [-10, 30, 20, 40, 20], 'cost' => 5],
     ['name' => 'ウンキウ級艦体', 'params' => [15, 10, 0, 60, 15], 'cost' => 9],
@@ -75,6 +77,14 @@ foreach ($bodys as $body) {
     foreach ($tails as $tail) {
         foreach ($heads as $head) {
             foreach ($bridges as $bridge) {
+                if (USE_KAI === false) {
+                    if (($body['cost'] === 20) ||
+                        ($tail['cost'] === 20) ||
+                        ($head['cost'] === 20) ||
+                        ($bridge['cost'] === 20)) {
+                        continue;
+                    }
+                }
                 $cost = $body['cost'] + $tail['cost'] + $head['cost'] + $bridge['cost'];
                 if ($cost <= 80) {
                     $spec = $body['params'][0] + $tail['params'][0] + $head['params'][0] + $bridge['params'][0] + BONUS_OF_SPEC;
